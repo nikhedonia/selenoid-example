@@ -1,0 +1,26 @@
+sudo docker run -it ubuntu:latest /bin/bash # download and run container; start /bin/bash shell
+sudo docker run -it -p3000:3333 -v`pwd`:/home/dev ubuntu:latest /bin/bash 
+	# -p: map host port 3000 to container port 3333
+	# -v: map current working directory of host as /home/dev
+
+sudo docker build . -t myimage:version-tag # build from dockerfile image and name it myimage:version-tag
+
+sudo docker ps # see what docker processes are running
+
+sudo docker kill <container> # kill running container
+sudo docker rm <Image> # delete image
+
+
+sudo docker-compose up # start all services described in docker-compose file
+sudo docker-compose down # stop all services ...
+
+
+
+
+
+
+
+
+
+
+
